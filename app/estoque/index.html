@@ -1,0 +1,32 @@
+<table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th>Código item</th>
+        <th>Data Entrada</th>
+        <th>Tipo</th>
+        <th>Marca</th>
+        <th>Características</th>
+        <th>Tamanho</th>
+        <th>Cor</th>
+        <th>Valor Etiqueta</th>
+        <th>Valor Compra</th>
+        <th>Valor com Margem</th>
+        <th>Preço Sugerido</th>
+        
+    </tr>
+    <tr ng-repeat= "Roupa in vm.ListRoupa">
+        <td><button class="btn btn-danger" ng-click="vm.DeletarRoupa(Roupa)">Excluir</button></td>    
+        <td>{{ Roupa._id }}</td>
+        <td>{{ Roupa.dataentrada }}</td>
+        <td>{{ Roupa.tipo }}</td>
+        <td>{{ Roupa.marca }}</td>
+        <td>{{ Roupa.carac }}</td>
+        <td>{{ Roupa.tamanho }}</td>
+        <td>{{ Roupa.cor }}</td>
+        <td>{{ Roupa.valoretiqueta }}</td>
+        <td>{{ Roupa.valorcompra }}</td>
+        <td>{{ Roupa.valormargem }}</td>
+        <td>{{ Roupa.precosugerido }}</td>
+  </tr>
+  </table>

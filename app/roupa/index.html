@@ -1,0 +1,44 @@
+<h1>My Stock</h1>
+<div class="form-container">
+    <form method="post">
+        <div class="form-group">
+            <label for="dataEntrada">Entry Date</label>
+            <input type="date" id="dataEntrada" class="form-control" ng-model="vm.roupa.dataEntrada" required />
+        </div>
+        <div class="form-group">
+            <label for="tipo">Type</label>
+            <input type="text" id="tipo" class="form-control" ng-model="vm.roupa.tipo" required />
+        </div>
+        <div class="form-group">
+            <label for="marca">Brand</label>
+            <input type="text" id="marca" class="form-control" ng-model="vm.roupa.marca" required />
+        </div>
+        <div class="form-group">
+            <label for="caracteristicas">Features</label>
+            <input type="text" id="caracteristicas" class="form-control" ng-model="vm.roupa.caracteristicas" />
+        </div>
+        <div class="form-group">
+            <label for="tamanho">Size</label>
+            <input type="number" id="tamanho" class="form-control" ng-model="vm.roupa.tamanho" />
+        </div>
+        <div class="form-group">
+            <label for="cor">Color</label>
+            <input type="text" id="cor" class="form-control" ng-model="vm.roupa.cor"/>
+        </div>
+        <div class="form-group">
+            <label for="valorEtiqueta">Tag Value</label>
+            <input type="number" id="valorEtiqueta" class="form-control" ng-model="vm.roupa.valorEtiqueta" />
+        </div>
+        <div class="form-group">
+            <label for="valorCompra">Purchase Amount</label>
+            <input type="number" id="valorCompra" class="form-control" ng-model="vm.roupa.valorCompra"/>
+        </div>
+        <div class="form-group">
+            <label for="precoSugerido">Suggested Price</label>
+            <input type="number" id="precoSugerido" class="form-control" ng-model="vm.roupa.precoSugerido"/>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="vm.salvarRoupa()">Save</button>            
+        </div>
+    </form>
+</div>
