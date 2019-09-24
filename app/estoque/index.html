@@ -1,3 +1,4 @@
+<div style="overflow-x:auto;">
 <table>
     <tr>
         <th></th>
@@ -17,16 +18,18 @@
     </tr>
     <tr ng-repeat= "Roupa in vm.ListRoupa">
         <td><button class="btn btn-danger" ng-click="vm.DeletarRoupa(Roupa)">Excluir</button></td>    
+        <td><button class="btn btn-primary" ng-click="vm.AlterarRoupa(Roupa)">Alterar</button></td>   
         <td>{{ Roupa._id }}</td>
-        <td>{{ Roupa.dataentrada }}</td>
+        <td>{{ Roupa.dataEntrada }}</td>
         <td>{{ Roupa.tipo }}</td>
         <td>{{ Roupa.marca }}</td>
-        <td>{{ Roupa.carac }}</td>
+        <td>{{ Roupa.caracteristicas }}</td>
         <td>{{ Roupa.tamanho }}</td>
         <td>{{ Roupa.cor }}</td>
-        <td>{{ Roupa.valoretiqueta }}</td>
-        <td>{{ Roupa.valorcompra }}</td>
-        <td>{{ Roupa.valormargem }}</td>
-        <td>{{ Roupa.precosugerido }}</td>
+        <td>{{ Roupa.valorEtiqueta }}</td>
+        <td>{{ Roupa.valorCompra }}</td>
+        <td>{{ Roupa.valorCompra*2 }}</td>
+        <td>{{ Roupa.precoSugerido }}</td>
   </tr>
   </table>
+</div>

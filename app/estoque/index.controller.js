@@ -11,12 +11,15 @@
         vm.ConsultarRoupa = ConsultarRoupa;
         vm.DeletarRoupa = DeletarRoupa;
         vm.ListRoupa = null;
-        vm.CalcularPrecoSugerido = CalcularPrecoSugerido;
+        vm.CalcularValorMargem = CalcularValorMargem;
         initController();
 
         function initController() {
             RoupaService.GetAll().then(function (roupas) {
                 vm.ListRoupa = roupas;
+            })
+            .catch(function (error) {
+                FlashService.Error(error);
             });
         }      
         
@@ -41,11 +44,11 @@
             });
         }
 
-        function CalcularPrecoSugerido(Roupa)
+        function CalcularValorMargem(Roupa)
         {
-            var valor = Roupa.valorcompra;
+            var valor = Roupa.valorCompra;
 
-            Roupa.valormargem = valor*2;
+            Roupa.valorMargem = valor*2;
         }
     }   
 

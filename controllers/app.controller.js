@@ -20,6 +20,10 @@ router.get('/userId', function (req, res) {
     res.send(req.session.userId);
 });
 
+// make userId  available to angular app
+router.get('/roupaId', function (req, res) {
+    res.send(req.session.userId);
+});
 
 // serve angular app files from the '/app' route
 router.use('/', express.static('app'));
